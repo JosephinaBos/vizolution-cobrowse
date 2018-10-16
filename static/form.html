@@ -1,0 +1,99 @@
+<html>
+
+    <style>
+      input, textarea {
+    padding: 9px;
+    border: solid 1px #E5E5E5;
+    outline: 0;
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;
+    width: 200px;
+    background: #FFFFFF url('bg_form.png') left top repeat-x;
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    }
+
+textarea {
+    width: 400px;
+    max-width: 400px;
+    height: 150px;
+    line-height: 150%;
+    }
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+    border-color: #C9C9C9;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+    }
+
+.form label {
+    margin-left: 10px;
+    color: #999999;
+    }
+
+.submit input {
+    width: auto;
+    padding: 9px 15px;
+    background: #e2484a;
+    border: 0;
+    font-size: 14px;
+    color: #FFFFFF;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    }
+
+      .formbx {
+      top: 100px;
+      left: 100px;
+      position: absolute:
+      }
+
+      .aligner {
+      display: flex;
+      align-items: center;
+       min-height: 24em;
+      justify-content: center;
+      }
+
+      .align {
+      flex: 1;
+      }
+
+      .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 100px;
+      }
+
+      body {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.2+100 */
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#33000000',GradientType=0 ); /* IE6-9 */
+      }
+      </style>
+  <body>
+
+    <div class="aligner">
+    <div class="align"></div>
+    <div class="formbox">
+
+    <form action="/join/" class="form" method="post">
+      <p class="name">
+        <input name="sessionid" type="text" />
+        <input name="sec" value="Adfdg563dg4DdjS53Hj98wGJeh4B6e56" type="hidden" />
+      </p>
+     <p class="submit">
+      <input value="Join Session" type="submit" />
+     </p>
+    </form>
+    </div>
+    <div class="align"></div>
+    </div>
+    <img class="logo" src="static/vizolution-logo.jpg" alt="Vizolution®">
+
+
