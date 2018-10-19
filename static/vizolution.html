@@ -58,7 +58,7 @@ l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
 (window,document,'script','Surfly');
 
 
-var settings={widgetkey:'0c17c102b943457a82838fe64a5a0a0d', hide_until_agent_joins: true, chat_box_color: "#189662", start_docked: true, follower_redirect_url: 'https://vizolution-cobrowse.herokuapp.com/Adfdg563dg4DdjS53Hj98wGJeh4B6e56'};
+var settings={widgetkey:'0c17c102b943457a82838fe64a5a0a0d', hide_until_agent_joins: true, chat_box_color: "#189662", show_loading_screen: false, start_docked: true, follower_redirect_url: 'https://vizolution-cobrowse.herokuapp.com/Adfdg563dg4DdjS53Hj98wGJeh4B6e56'};
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
         if (init.success) {
@@ -71,7 +71,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 .on('viewer_joined', function(session, event) {
                     // if a viewer joins and they are the first then redirect to home page
                     if(event.count==1){
-                      session.relocate("http://www.bnpparibas.co.uk/en/");
+                      session.relocate("https://www.cetelem.fr/fr/accueil");
                     }
                 }).startLeader();
           }
