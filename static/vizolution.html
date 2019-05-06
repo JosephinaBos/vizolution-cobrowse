@@ -4,7 +4,7 @@
     <title>BNP Co-browsing</title>
     <style>
         html,body {
-            background-color: #189662;
+            background-color: #f0027d;
             -webkit-background-size: auto; /* For WebKit*/
             -moz-background-size: auto;    /* Mozilla*/
             -o-background-size: auto;      /* Opera*/
@@ -42,10 +42,10 @@
 <body class="slabtexted">
 
     <center>
-        <h1>Welcome to BNP Paribas Co-browsing</h1>
+        <h1>Welcome to Vizolution</h1>
         <div id="form">
 
-    <img itemprop="logo" src="static/bnp-logo.png" alt="BNP Paribas®" style="width: 300px; margin-top: 55px;">
+    <img itemprop="logo" src="static/vizlogo.png" alt="Vizolution®" style="width: 300px; margin-top: 55px;">
 
                     <h2 id="sessidtarget" style="font-family: sans-serif;">Please wait...</h2>
         </div>
@@ -58,7 +58,7 @@ l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
 (window,document,'script','Surfly');
 
 
-var settings={widgetkey:'0c17c102b943457a82838fe64a5a0a0d', hide_until_agent_joins: true, chat_box_color: "#189662", show_loading_screen: false, start_docked: true, follower_redirect_url: 'https://vizolution-cobrowse.herokuapp.com/Adfdg563dg4DdjS53Hj98wGJeh4B6e56'};
+var settings={widgetkey:'4fcb5cbb3a3346f3b71cd11a19571e59', hide_until_agent_joins: true, docked_only: true, follower_redirect_url: 'https://vizolution-cobrowse.herokuapp.com/Adfdg563dg4DdjS53Hj98wGJeh4B6e56'};
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
         if (init.success) {
@@ -71,7 +71,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 .on('viewer_joined', function(session, event) {
                     // if a viewer joins and they are the first then redirect to home page
                     if(event.count==1){
-                      session.relocate("https://www.cetelem.fr/fr/accueil");
+                      session.relocate("http://www.vizolution.co.uk/");
                     }
                 }).startLeader();
           }
