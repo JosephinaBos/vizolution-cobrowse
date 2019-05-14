@@ -29,7 +29,7 @@ def join_session():
     security = request.forms.get('sec')
     if security != "Adfdg563dg4DdjS53Hj98wGJeh4B6e56":
         return abort(403, "Forbidden")
-    r = requests.get('https://api.surfly.com/v2/sessions/?api_key=4fcb5cbb3a3346f3b71cd11a19571e59&active_session=true')
+    r = requests.get('https://api.surfly.com/v2/sessions/?api_key=0c17c102b943457a82838fe64a5a0a0d&active_session=true')
     for session in r.json():
         if session['pin'] == pincode:
             return redirect(session['viewer_link'])
